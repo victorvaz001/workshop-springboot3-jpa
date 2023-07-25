@@ -14,7 +14,7 @@ import com.victorvazweb.course.repositories.UserRepository;
 @Profile("test")
 public class TestConfig implements CommandLineRunner {
 
-	@Autowired // resolve a dependencia e associa uma instancia de userRepository
+	@Autowired 
 	private UserRepository userRepository;
 
 	@Override
