@@ -36,6 +36,7 @@ public class UserService {
 	public void delete(Long id) {
 		try {
 			
+			User user= findById(id);
 			repository.deleteById(id);
 		}catch(EmptyResultDataAccessException e) {
 			throw new ResourceNotFoundException(id);
