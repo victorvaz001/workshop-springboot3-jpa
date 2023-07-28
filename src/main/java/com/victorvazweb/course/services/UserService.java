@@ -5,7 +5,6 @@ import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.DataIntegrityViolationException;
-import org.springframework.dao.EmptyResultDataAccessException;
 import org.springframework.stereotype.Service;
 
 import com.victorvazweb.course.entities.User;
@@ -13,6 +12,7 @@ import com.victorvazweb.course.repositories.UserRepository;
 import com.victorvazweb.course.resources.exceptions.DatabaseException;
 import com.victorvazweb.course.services.exceptions.ResourceNotFoundException;
 
+import jakarta.persistence.EntityNotFoundException;
 
 @Service
 public class UserService {
@@ -35,21 +35,24 @@ public class UserService {
 
 	public void delete(Long id) {
 		try {
-			
-			User user= findById(id);
+
+			User user = findById(id);
 			repository.deleteById(id);
-		}catch(EmptyResultDataAccessException e) {
+		} catch (ResourceNotFoundException e) {
 			throw new ResourceNotFoundException(id);
-		}catch(DataIntegrityViolationException e) {
+		} catch (DataIntegrityViolationException e) {
 			throw new DatabaseException(e.getMessage());
 		}
 	}
 
 	public User update(Long id, User obj) {
-		User entity = repository.getReferenceById(id); 
-														
-		updateData(entity, obj);
-		return repository.save(entity);
+		try {
+			User entity = repository.getReferenceById(id);
+			updateData(entity, obj);
+			return repository.save(entity);
+		}catch (EntityNotFoundException e) {
+			throw new ResourceNotFoundException(id);
+		}
 	}
 
 	private void updateData(User entity, User obj) {
