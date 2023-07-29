@@ -26,16 +26,6 @@ aplicação consiste no aprendizado basico de utilização do Spring Boot com um
 ![Modelo-Relacional](https://github.com/victorvaz001/workshop-springboot3-jpa/assets/42657636/eccf13ff-6553-4e22-a87b-67b7a8178dda)
 
 
-## Tabelas criadas
-  - TB_CATEGORY
- - TB_ORDER
- - TB_ORDER_ITEM
- - TB_PAYMENT
- - TB_PRODUCT
- - TB_PRODUCT_CATEGORY
- - TB_USER
-
-
   ## Teste Endpoint com o Postman
 
   - Recuperando Usuários
@@ -62,9 +52,34 @@ aplicação consiste no aprendizado basico de utilização do Spring Boot com um
 
 ![Update](https://github.com/victorvaz001/workshop-springboot3-jpa/assets/42657636/12fe4895-8110-4e40-8d27-8d152f81be67)
 
-## Como executar o projeto
+## Como executar o projeto - Windows
+### Neste exemplo estou utilizando a IDE, Spring Tools Suite 4
+1  - Instalar o Git com a ferramenta **Git Bash**
+2  - Criar uma pasta para armazenar o projeto
+3  - Ir no GitHub onde esta o projeto Ex: (https://github.com/victorvaz001/workshop-springboot3-jpa)
+4  - Cilicar no botão (**<> Code**)
+5  - Clicar em SSH
+6  - Copiar a url Ex: (git@github.com:victorvaz001/workshop-springboot3-jpa.git)
+7  - Ir na pasta criada, clicar com o botão direito do mouse, clicar em Git Bash Here
+8  - Executar o comando git clone 'colar a url copiada no item 6' sem aspas
+9  - Abrir a IDEA
+10 - Clicar em File, Open Project from file System
+11 - Clicar em **Directory**, ir até a pasta que esta o projeto e selecionar ele
+12 - Clicar em Finish
+13 - Para testar o projeto, basta ir no pacote src/main/java -> com.victorvazweb.course
+14 - Clicar com o botão direto na classe CourseApplication.java -> Run As -> Spring Boot App
+15 - Abrir o Navegador e digitar a url (http://localhost:8080/h2-console)
+16 - Apos abrir a url a base de dados H2 ira apracer
+17 - Clicar em connect, após isso as tabelas irão aparecer
 
-- 
+## Tabelas criadas
+ - TB_CATEGORY
+ - TB_ORDER
+ - TB_ORDER_ITEM
+ - TB_PAYMENT
+ - TB_PRODUCT
+ - TB_PRODUCT_CATEGORY
+ - TB_USER
 
 ## Autor
 
