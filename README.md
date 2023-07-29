@@ -46,6 +46,12 @@ aplicação consiste no aprendizado basico de utilização do Spring Boot com um
 
 ![CadastroUusuario](https://github.com/victorvaz001/workshop-springboot3-jpa/assets/42657636/2883ae2d-9dad-46d3-affc-1e6850ec82c1)
 
+  - Deletando de Usuário, passando um id
+  - Metodo Delete
+  - Endpoint: http://localhost:8080/users/3
+
+![Delete](https://github.com/victorvaz001/workshop-springboot3-jpa/assets/42657636/bfded5b6-333f-47f8-b0ab-79e3e99695ab)
+
   - Atualização de Usuário, passando parametros no Body
   - Metodo Put
   - Endpoint: http://localhost:8080/users/1
@@ -54,23 +60,23 @@ aplicação consiste no aprendizado basico de utilização do Spring Boot com um
 
 ## Como executar o projeto - Windows
 ### Neste exemplo estou utilizando a IDE, Spring Tools Suite 4
-1  - Instalar o Git com a ferramenta **Git Bash**
-2  - Criar uma pasta para armazenar o projeto
-3  - Ir no GitHub onde esta o projeto Ex: (https://github.com/victorvaz001/workshop-springboot3-jpa)
-4  - Cilicar no botão (**<> Code**)
-5  - Clicar em SSH
-6  - Copiar a url Ex: (git@github.com:victorvaz001/workshop-springboot3-jpa.git)
-7  - Ir na pasta criada, clicar com o botão direito do mouse, clicar em Git Bash Here
-8  - Executar o comando git clone 'colar a url copiada no item 6' sem aspas
-9  - Abrir a IDEA
-10 - Clicar em File, Open Project from file System
-11 - Clicar em **Directory**, ir até a pasta que esta o projeto e selecionar ele
-12 - Clicar em Finish
-13 - Para testar o projeto, basta ir no pacote src/main/java -> com.victorvazweb.course
-14 - Clicar com o botão direto na classe CourseApplication.java -> Run As -> Spring Boot App
-15 - Abrir o Navegador e digitar a url (http://localhost:8080/h2-console)
-16 - Apos abrir a url a base de dados H2 ira apracer
-17 - Clicar em connect, após isso as tabelas irão aparecer
+- 1  - Instalar o Git com a ferramenta **Git Bash**
+- 2  - Criar uma pasta para armazenar o projeto
+- 3  - Ir no GitHub onde esta o projeto Ex: (https://github.com/victorvaz001/workshop-springboot3-jpa)
+- 4  - Cilicar no botão (**<> Code**)
+- 5  - Clicar em SSH
+- 6  - Copiar a url Ex: (git@github.com:victorvaz001/workshop-springboot3-jpa.git)
+- 7  - Ir na pasta criada, clicar com o botão direito do mouse, clicar em Git Bash Here
+- 8  - Executar o comando git clone 'colar a url copiada no item 6' sem aspas
+- 9  - Abrir a IDEA
+- 10 - Clicar em File, Open Project from file System
+- 11 - Clicar em **Directory**, ir até a pasta que esta o projeto e selecionar ele
+- 12 - Clicar em Finish
+- 13 - Para testar o projeto, basta ir no pacote src/main/java -> com.victorvazweb.course
+- 14 - Clicar com o botão direto na classe CourseApplication.java -> Run As -> Spring Boot App
+- 15 - Abrir o Navegador e digitar a url (http://localhost:8080/h2-console)
+- 16 - Apos abrir a url a base de dados H2 ira apracer
+- 17 - Clicar em connect, após isso as tabelas irão aparecer
 
 ## Tabelas criadas
  - TB_CATEGORY
