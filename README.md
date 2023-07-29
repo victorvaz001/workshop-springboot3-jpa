@@ -7,14 +7,13 @@ Projeto Spring Boot 1 foi construido durante o curso  (Java COMPLETO 2023 Progra
 aplicação consiste no aprendizado basico de utilização do Spring Boot com uma base de dados, utilizando metodos como GET, POST, PUT e Delete.
 
 ## Objetivo do projeto
-  - Criação do projeto Spring Boot utilizando o initializr (https://start.spring.io/)
-  - Implementação do modelo Conceitual
+  - Criar o projeto Spring Boot utilizando o initializr (https://start.spring.io/)
+  - Implementar um modelo Conceitual
   - Estruturar camadas lógicas: resource, service, repository
-  - Configuração do Banco de dados H2
-  - Povoar Banco de dados
-  - CRUD - Create, Retrieve, Update, Delete
-  - Tratamento de exceções
-  - Utilização do Hibernate
+  - Configurar o Banco de dados H2
+  - Desenvolver Banco de dados com os metodos create, Retrieve, Update, Delete
+  - Tratar de exceções
+  - Utilizar o Hibernate
 
 ## Tecnologias
   - Java 17
