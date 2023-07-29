@@ -40,13 +40,13 @@ aplicação consiste no aprendizado basico de utilização do Spring Boot com um
     
 ![RecuperandoCategorias](https://github.com/victorvaz001/workshop-springboot3-jpa/assets/42657636/b5da3766-56fd-4fd3-90e3-e2fa168fc28c)
 
-  - Cadastro de Usuários
+  - Cadastro de Usuários, passando parametros no Body
   - Metodo Post
   - Endpoint: http://localhost:8080/users
 
 ![CadastroUusuario](https://github.com/victorvaz001/workshop-springboot3-jpa/assets/42657636/2883ae2d-9dad-46d3-affc-1e6850ec82c1)
 
-  - Atualização de Usuário
+  - Atualização de Usuário, passando parametros no Body
   - Metodo Put
   - Endpoint: http://localhost:8080/users/1
 
